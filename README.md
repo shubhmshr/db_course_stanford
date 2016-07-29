@@ -1,4 +1,2 @@
-# db_course_stanford
+# db_course_stanford DB5 SQL
 
-Find the titles of all movies directed by Steven Spielberg. 
-select TITLE from MOVIE WHERE DIRECTOR='Steven Spielberg';
