@@ -86,7 +86,7 @@ select avg(stars_before_1980)-avg(stars_after_1980) from
         where a.mid=b.mid
         and b.year<1980
         group by b.title,b.mid)  a,              
-        (select  avg(a.stars) as stars_after_1980
+        (select  b.mid,b.title,avg(a.stars) as stars_after_1980
         from 
         rating a,
         movie b
